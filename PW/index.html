@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Universitaria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .question {
+            margin: 10px 0;
+        }
+        .options input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Encuesta Universitaria</h1>
+    <p>Estimado(a) estudiante,<br><br>
+    Con el objetivo de mejorar los servicios y la calidad educativa en nuestra universidad, te invitamos a completar esta breve encuesta. Tu opinión es muy importante para nosotros.</p>
+
+    <form>
+        <!-- Sección 1: Información General -->
+        <section>
+            <h2>Sección 1: Información General</h2>
+            <div class="question">
+                <label>¿En qué carrera estás inscrito(a)?</label><br>
+                <input type="radio" name="carrera" value="Arquitectura"> Arquitectura<br>
+                <input type="radio" name="carrera" value="Ingeniería en Sistemas Computacionales"> Ingeniería en Sistemas Computacionales<br>
+                <input type="radio" name="carrera" value="Turismo"> Turismo<br>
+                <input type="radio" name="carrera" value="Contador Publico"> Contador Publico<br>
+                <input type="radio" name="carrera" value="Otras"> Otras: <input type="text" name="otra_carrera" placeholder="Especificar">
+            </div>
+            <div class="question">
+                <label>¿En qué semestre te encuentras?</label><br>
+                <input type="radio" name="semestre" value="1° a 2°"> 1° a 2°<br>
+                <input type="radio" name="semestre" value="3° a 4°"> 3° a 4°<br>
+                <input type="radio" name="semestre" value="5° a 6°"> 5° a 6°<br>
+                <input type="radio" name="semestre" value="7° a 8°"> 7° a 8°<br>
+                <input type="radio" name="semestre" value="9° o más"> 9° o más
+            </div>
+        </section>
+
+        <!-- Sección 2: Satisfacción Académica -->
+        <section>
+            <h2>Sección 2: Satisfacción Académica</h2>
+            <div class="question">
+                <label>¿Cómo evalúas la calidad de la enseñanza impartida por los profesores?</label><br>
+                <input type="radio" name="calidad_profesores" value="Muy satisfactoria"> Muy satisfactoria<br>
+                <input type="radio" name="calidad_profesores" value="Satisfactoria"> Satisfactoria<br>
+                <input type="radio" name="calidad_profesores" value="Regular"> Regular<br>
+                <input type="radio" name="calidad_profesores" value="Insatisfactoria"> Insatisfactoria<br>
+                <input type="radio" name="calidad_profesores" value="Muy insatisfactoria"> Muy insatisfactoria
+            </div>
+            <div class="question">
+                <label>¿Los recursos de aprendizaje (bibliotecas, plataformas digitales, laboratorios) cumplen tus expectativas?</label><br>
+                <input type="radio" name="recursos_aprendizaje" value="Totalmente"> Totalmente<br>
+                <input type="radio" name="recursos_aprendizaje" value="Parcialmente"> Parcialmente<br>
+                <input type="radio" name="recursos_aprendizaje" value="Poco"> Poco<br>
+                <input type="radio" name="recursos_aprendizaje" value="No cumplen"> No cumplen
+            </div>
+            <div class="question">
+                <label>¿Consideras que el contenido de los cursos está actualizado y es relevante para tu carrera?</label><br>
+                <input type="radio" name="contenido_cursos" value="Sí"> Sí<br>
+                <input type="radio" name="contenido_cursos" value="En algunos casos"> En algunos casos<br>
+                <input type="radio" name="contenido_cursos" value="No"> No
+            </div>
+        </section>
+
+        <!-- Sección 3: Servicios Administrativos -->
+        <section>
+            <h2>Sección 3: Servicios Administrativos</h2>
+            <div class="question">
+                <label>¿Cómo calificas la atención en los servicios administrativos (matrícula, becas, secretaría)?</label><br>
+                <input type="radio" name="atencion_servicios" value="Excelente"> Excelente<br>
+                <input type="radio" name="atencion_servicios" value="Buena"> Buena<br>
+                <input type="radio" name="atencion_servicios" value="Regular"> Regular<br>
+                <input type="radio" name="atencion_servicios" value="Mala"> Mala
+            </div>
+            <div class="question">
+                <label>¿Has tenido alguna dificultad con el proceso de inscripción o matrícula?</label><br>
+                <input type="radio" name="dificultades_inscripcion" value="Nunca"> Nunca<br>
+                <input type="radio" name="dificultades_inscripcion" value="Alguna vez"> Alguna vez<br>
+                <input type="radio" name="dificultades_inscripcion" value="Frecuentemente"> Frecuentemente
+            </div>
+            <div class="question">
+                <label>¿Qué tan accesibles te resultan los servicios de soporte (tecnología, consultas académicas)?</label><br>
+                <input type="radio" name="accesibilidad_soporte" value="Muy accesibles"> Muy accesibles<br>
+                <input type="radio" name="accesibilidad_soporte" value="Accesibles"> Accesibles<br>
+                <input type="radio" name="accesibilidad_soporte" value="Poco accesibles"> Poco accesibles<br>
+                <input type="radio" name="accesibilidad_soporte" value="No accesibles"> No accesibles
+            </div>
+        </section>
+
+        <!-- Sección 4: Infraestructura y Ambiente Universitario -->
+        <section>
+            <h2>Sección 4: Infraestructura y Ambiente Universitario</h2>
+            <div class="question">
+                <label>¿Cómo valoras el estado de las instalaciones (aulas, laboratorios, áreas comunes)?</label><br>
+                <input type="radio" name="estado_instalaciones" value="Excelente"> Excelente<br>
+                <input type="radio" name="estado_instalaciones" value="Buena"> Buena<br>
+                <input type="radio" name="estado_instalaciones" value="Regular"> Regular<br>
+                <input type="radio" name="estado_instalaciones" value="Deficiente"> Deficiente
+            </div>
+            <div class="question">
+                <label>¿Te sientes seguro(a) en las instalaciones de la universidad?</label><br>
+                <input type="radio" name="seguridad" value="Sí, completamente"> Sí, completamente<br>
+                <input type="radio" name="seguridad" value="A veces"> A veces<br>
+                <input type="radio" name="seguridad" value="No"> No
+            </div>
+            <div class="question">
+                <label>¿Cómo calificarías el ambiente estudiantil en términos de apoyo, integración y convivencia?</label><br>
+                <input type="radio" name="ambiente_estudiantil" value="Excelente"> Excelente<br>
+                <input type="radio" name="ambiente_estudiantil" value="Bueno"> Bueno<br>
+                <input type="radio" name="ambiente_estudiantil" value="Regular"> Regular<br>
+                <input type="radio" name="ambiente_estudiantil" value="Deficiente"> Deficiente
+            </div>
+        </section>
+
+        <!-- Sección 5: Comentarios Finales -->
+        <section>
+            <h2>Sección 5: Comentarios Finales</h2>
+            <div class="question">
+                <label>¿Qué sugerencias tienes para mejorar los servicios o el ambiente en la universidad?</label><br>
+                <textarea name="sugerencias" rows="4" placeholder="Escribe tus sugerencias aquí..."></textarea>
+            </div>
+            <div class="question">
+                <label>¿Hay algún aspecto en particular que te gustaría que la universidad mejorara?</label><br>
+                <textarea name="aspectos_a_mejorar" rows="4" placeholder="Escribe aquí..."></textarea>
+            </div>
+        </section>
+
+        <input type="submit" value="Enviar Encuesta">
+    </form>
+</body>
+</html>
